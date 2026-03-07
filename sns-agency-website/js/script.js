@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (data && serviceModal && serviceModalBody) {
       serviceModalBody.innerHTML = `
         <h3 class="modal-service-title">${data.title}</h3>
-        <p class="modal-service-desc">${data.desc}</p>
+        ${data.desc}
         <div class="modal-service-price">${data.price}</div>
       `;
       serviceModal.classList.add('active');
