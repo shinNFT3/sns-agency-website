@@ -2,7 +2,26 @@
  * SNS Agency Website - Script
  */
 
+// ページ読み込み直後にURLのハッシュを除去し、強制的にトップへスクロール
+// （リロード時に #contact 等のハッシュが残っていてスクロールジャンプするのを防ぐ）
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+if (window.location.hash) {
+  history.replaceState(null, '', window.location.pathname + window.location.search);
+}
+window.scrollTo(0, 0);
+
 document.addEventListener('DOMContentLoaded', () => {
+  // DOMContentLoaded後も念のためトップへ
+  window.scrollTo(0, 0);
+
+  // Dynamically inject the hidden iframe after page load to prevent it from stealing scroll focus on reload
+  setTimeout(() => {
+    const iframeHtml = `<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted) {alert('お問い合わせを受け付けました。後ほど担当者よりご連絡いたします。'); document.getElementById('gform').reset(); window.submitted=false;}"></iframe>`;
+    document.body.insertAdjacentHTML('beforeend', iframeHtml);
+  }, 100);
+
   // --- Header Scroll Effect & Back to Top ---
   const header = document.getElementById('header');
   const backToTop = document.getElementById('backToTop');
