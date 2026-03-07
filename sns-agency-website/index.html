@@ -242,36 +242,37 @@
 
                 <div class="service-grid">
                     <div class="service-card glass-card fade-in-up delay-1">
-                        <h3 class="service-title">インスタ運用CM動画制作＋<br>365日配信プラン</h3>
-                        <p class="service-detail">【CM動画制作✖️365日配信】</p>
+                        <img src="images/badge_light.png" alt="" class="service-card-badge" aria-hidden="true">
+                        <p class="service-plan-sub">作業代行</p>
+                        <h3 class="service-title">ライトプラン</h3>
                         <div class="service-price">
-                            <span class="price-val">40,000</span>円(税別)〜<span class="price-unit">/月額</span>
+                            <span class="price-val">50,000</span>円（税込）〜
                         </div>
                         <button class="btn btn-primary btn-sm mt-auto open-service-modal"
                             data-service="1">詳しく見る</button>
                     </div>
 
                     <div class="service-card glass-card fade-in-up delay-2">
-                        <h3 class="service-title">各種SNS運用代行</h3>
-                        <p class="service-detail">TikTok、Instagram、YouTubeショート<br>【企画、撮影、編集込み】</p>
+                        <img src="images/badge_standard.png" alt="" class="service-card-badge" aria-hidden="true">
+                        <p class="service-plan-sub">基本運用</p>
+                        <h3 class="service-title">スタンダードプラン</h3>
                         <div class="service-price">
-                            <span class="price-val">200,000</span>円(税別)<span class="price-unit">/月額</span>
+                            月額<span class="price-val">120,000</span>円〜
                         </div>
                         <button class="btn btn-primary btn-sm mt-auto open-service-modal"
                             data-service="2">詳しく見る</button>
                     </div>
 
                     <div class="service-card glass-card fade-in-up delay-3">
-                        <h3 class="service-title">各種SNS運用代行</h3>
-                        <p class="service-detail">TikTok、Instagram、YouTubeショート<br>【月動画15本投稿、企画、撮影、編集込み】</p>
+                        <img src="images/badge_premium.png" alt="" class="service-card-badge" aria-hidden="true">
+                        <p class="service-plan-sub">総合支援</p>
+                        <h3 class="service-title">プレミアムプラン</h3>
                         <div class="service-price">
-                            <span class="price-val">350,000</span>円(税別)<span class="price-unit">/月額</span>
+                            <span class="price-val">200,000</span>円〜
                         </div>
                         <button class="btn btn-primary btn-sm mt-auto open-service-modal"
                             data-service="3">詳しく見る</button>
                     </div>
-
-
                 </div>
             </div>
         </section>
@@ -356,19 +357,16 @@
                         お問い合わせフォーム必須事項をご記入ください。<br>2営業日以内に、担当者からご返信させて頂きます。<br>※問い合わせフォームへの返信は登録メールアドレス宛に致します。</p>
                 </div>
 
-                <script type="text/javascript">var submitted = false;</script>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-                    onload="if(submitted)  {alert('お問い合わせを受け付けました。後ほど担当者よりご連絡いたします。'); document.getElementById('gform').reset(); submitted=false; }"></iframe>
                 <form class="contact-form glass-card fade-in-up delay-1" id="gform"
                     action="https://docs.google.com/forms/d/e/1FAIpQLSfawVQ5u2clCfujz6vWc8oNDs84TkIATZwKThTi90_ws8bNWA/formResponse"
-                    method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+                    method="POST" target="hidden_iframe" onsubmit="window.submitted=true;">
                     <div class="form-group">
                         <label for="name">お名前 <span class="required">【必須】</span></label>
-                        <input type="text" id="name" name="entry.669617804" class="form-control" required>
+                        <input type="text" id="name" name="entry.669617804" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="email">メールアドレス <span class="required">【必須】</span></label>
-                        <input type="email" id="email" name="entry.930325068" class="form-control" required>
+                        <input type="email" id="email" name="entry.930325068" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="phone">電話番号</label>

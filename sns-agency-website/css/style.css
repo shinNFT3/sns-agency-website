@@ -590,12 +590,38 @@ img {
     border-radius: 20px;
     text-align: center;
     transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    position: relative;
+    overflow: hidden;
 }
 
 .service-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-lg);
 }
+
+/* バッジ背景画像（薄いウォーターマーク） */
+.service-card-badge {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    opacity: 0.08;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* プランサブテキスト（薄い文字） */
+.service-plan-sub {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+}
+
 
 .service-title {
     font-size: 1.25rem;
