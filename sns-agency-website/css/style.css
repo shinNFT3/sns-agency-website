@@ -599,17 +599,19 @@ img {
     box-shadow: var(--shadow-lg);
 }
 
-/* バッジ背景画像（薄いウォーターマーク） */
+/* バッジ背景画像（中央スタンプ風ウォーターマーク） */
 .service-card-badge {
     position: absolute;
-    bottom: -10px;
-    right: -10px;
-    width: 140px;
-    height: 140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-12deg);
+    width: 200px;
+    height: 200px;
     object-fit: contain;
-    opacity: 0.18;
+    opacity: 0.13;
     pointer-events: none;
     user-select: none;
+    z-index: 0;
 }
 
 /* プランサブテキスト（薄い文字） */
@@ -620,6 +622,16 @@ img {
     text-transform: uppercase;
     color: var(--color-text-muted);
     margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* カード内のその他コンテンツはバッジより前面に */
+.service-card .service-title,
+.service-card .service-price,
+.service-card .btn {
+    position: relative;
+    z-index: 1;
 }
 
 
