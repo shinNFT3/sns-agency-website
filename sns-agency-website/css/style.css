@@ -607,7 +607,7 @@ img {
     width: 140px;
     height: 140px;
     object-fit: contain;
-    opacity: 0.08;
+    opacity: 0.18;
     pointer-events: none;
     user-select: none;
 }
