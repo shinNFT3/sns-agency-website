@@ -710,9 +710,17 @@ img {
 
 .service-price {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--color-primary);
     margin-bottom: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* サービスカード内の数字は少し小さく（1行に収めるため） */
+.service-card .price-val {
+    font-size: 1.7rem;
 }
 
 .price-val {
