@@ -95,22 +95,52 @@ document.addEventListener('DOMContentLoaded', () => {
   const openModalBtns = document.querySelectorAll('.open-service-modal');
   const closeModalBtns = document.querySelectorAll('.modal-close');
 
-  // Service Data (Mocked based on existing cards)
+  // Service Data
   const serviceData = {
     "1": {
-      title: "インスタ運用CM動画制作＋365日配信プラン",
-      desc: "CMレベルの高品質な動画制作と、365日休むことのない継続的な配信により、圧倒的な認知拡大を実現します。<br><br>【プラン内容】<br>・プロによるCM動画制作<br>・365日の毎日投稿運用代行<br>・効果測定とレポート提出",
-      price: "<span class='price-val'>40,000</span>円(税別)〜<span class='price-unit'>/月額</span>"
+      title: "ライトプラン",
+      desc: `
+        <p class="modal-plan-category">作業代行</p>
+        <div class="modal-info-block">
+          <p class="modal-info-label">業務内容</p>
+          <p class="modal-info-text">いただいた素材の投稿作業、簡易テキスト作成</p>
+        </div>
+        <div class="modal-info-block">
+          <p class="modal-info-label">ケース</p>
+          <p class="modal-info-text">とにかく日々の作業の手間を減らしたい</p>
+        </div>
+      `,
+      price: "<span class='price-val'>50,000</span>円（税別）〜 / 月額"
     },
     "2": {
-      title: "各種SNS運用代行 (月額20万円プラン)",
-      desc: "TikTok、Instagram、YouTubeショートを活用した幅広いSNS展開をサポートします。<br><br>【プラン内容】<br>・各SNSの企画立案<br>・プロによる撮影・編集作業<br>・複数プラットフォームへの投稿代行",
-      price: "<span class='price-val'>200,000</span>円(税別)<span class='price-unit'>/月額</span>"
+      title: "スタンダードプラン",
+      desc: `
+        <p class="modal-plan-category">基本運用</p>
+        <div class="modal-info-block">
+          <p class="modal-info-label">業務内容</p>
+          <p class="modal-info-text">企画、画像作成、投稿、コメント対応</p>
+        </div>
+        <div class="modal-info-block">
+          <p class="modal-info-label">ケース</p>
+          <p class="modal-info-text">プロの力で着実にアカウントを伸ばしたい</p>
+        </div>
+      `,
+      price: "<span class='price-val'>100,000</span>円（税別）〜 / 月額"
     },
     "3": {
-      title: "各種SNS運用代行 (月額35万円プラン)",
-      desc: "TikTok、Instagram、YouTubeショートを活用し、安定した月間15本の動画投稿を行います。<br><br>【プラン内容】<br>・月動画15本投稿<br>・企画、撮影、編集すべて込み<br>・エンゲージメント分析",
-      price: "<span class='price-val'>350,000</span>円(税別)<span class='price-unit'>/月額</span>"
+      title: "プレミアムプラン",
+      desc: `
+        <p class="modal-plan-category">総合支援</p>
+        <div class="modal-info-block">
+          <p class="modal-info-label">業務内容</p>
+          <p class="modal-info-text">戦略立案、広告運用、詳細分析、炎上対策、月次レポート提出</p>
+        </div>
+        <div class="modal-info-block">
+          <p class="modal-info-label">ケース</p>
+          <p class="modal-info-text">SNSを本格的に売り上げや集客の柱に育て上げたい</p>
+        </div>
+      `,
+      price: "<span class='price-val'>200,000</span>円（税別）〜 / 月額"
     },
     "4": {
       title: "各種SNS運用代行 (月額60万円プラン)",

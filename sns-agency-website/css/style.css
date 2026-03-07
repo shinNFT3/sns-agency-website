@@ -1392,3 +1392,43 @@ textarea.form-control {
     color: var(--color-text-muted);
     font-size: 1rem;
 }
+
+/* モーダル統一テンプレート用スタイル */
+.modal-plan-category {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    padding: 0.3rem 0.8rem;
+    background: rgba(59, 130, 246, 0.08);
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.modal-info-block {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.modal-info-block:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.modal-info-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+}
+
+.modal-info-text {
+    font-size: 1rem;
+    color: var(--color-text-main);
+    line-height: 1.7;
+}
