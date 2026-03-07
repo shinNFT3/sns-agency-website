@@ -824,6 +824,14 @@ body {
         width: 180px;
         height: 180px;
     }
+
+    .contact-button {
+        font-size: var(--font-size-sm);
+        padding: 12px 24px;
+        max-width: 280px;
+        white-space: nowrap;
+        /* 改行を防ぐ */
+    }
 }
 
 /* Instagram Modal */
