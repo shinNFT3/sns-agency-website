@@ -734,11 +734,13 @@ img {
 .service-features-list {
     list-style: none;
     padding: 0;
-    margin: 0 0 2rem 0;
+    margin: 0 auto 2rem auto;
     text-align: left;
     font-size: 0.95rem;
     color: var(--color-text-muted);
     flex-grow: 1;
+    width: fit-content;
+    max-width: 100%;
 }
 
 .service-features-list li {
