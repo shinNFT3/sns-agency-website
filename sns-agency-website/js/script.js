@@ -101,14 +101,14 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "ライトプラン",
       desc: `
         <p class="modal-plan-category">作業代行</p>
-        <div class="modal-info-block">
-          <p class="modal-info-label">業務内容</p>
-          <p class="modal-info-text">いただいた素材の投稿作業、簡易テキスト作成</p>
-        </div>
-        <div class="modal-info-block">
-          <p class="modal-info-label">ケース</p>
-          <p class="modal-info-text">とにかく日々の作業の手間を減らしたい</p>
-        </div>
+        <ul class="service-features-list" style="margin-bottom: 1rem;">
+          <li>1アカウント運用</li>
+          <li>月4回投稿</li>
+          <li>ピン留め用イメージ動画作成</li>
+          <li>基本的な運用代行プラン</li>
+          <li>契約期間：1年〜</li>
+        </ul>
+        <p class="modal-target-audience">👉 初めての運用・コストを抑えたい方向け</p>
       `,
       price: "<span class='price-val'>50,000</span>円（税別）〜 / 月額"
     },
@@ -116,14 +116,14 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "スタンダードプラン",
       desc: `
         <p class="modal-plan-category">基本運用</p>
-        <div class="modal-info-block">
-          <p class="modal-info-label">業務内容</p>
-          <p class="modal-info-text">企画、画像作成、投稿、コメント対応</p>
-        </div>
-        <div class="modal-info-block">
-          <p class="modal-info-label">ケース</p>
-          <p class="modal-info-text">プロの力で着実にアカウントを伸ばしたい</p>
-        </div>
+        <ul class="service-features-list" style="margin-bottom: 1rem;">
+          <li>2アカウント運用</li>
+          <li>月4回投稿（各アカウント）</li>
+          <li>ピン留め用イメージ動画（各アカウント分）</li>
+          <li>月1回オンラインミーティング<br><span style="font-size: 0.85em; color: #666;">（アカウント成長・改善提案を含む）</span></li>
+          <li>コンサル要素を含む運用サポート</li>
+        </ul>
+        <p class="modal-target-audience">👉 複数アカウント運用・成果改善したい方向け</p>
       `,
       price: "<span class='price-val'>100,000</span>円（税別）〜 / 月額"
     },
@@ -131,14 +131,16 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "プレミアムプラン",
       desc: `
         <p class="modal-plan-category">総合支援</p>
-        <div class="modal-info-block">
-          <p class="modal-info-label">業務内容</p>
-          <p class="modal-info-text">戦略立案、広告運用、詳細分析、炎上対策、月次レポート提出</p>
-        </div>
-        <div class="modal-info-block">
-          <p class="modal-info-label">ケース</p>
-          <p class="modal-info-text">SNSを本格的に売り上げや集客の柱に育て上げたい</p>
-        </div>
+        <ul class="service-features-list" style="margin-bottom: 1rem;">
+          <li>1アカウント運用</li>
+          <li>月8回投稿</li>
+          <li>投稿内容・投稿文の精査<br><span style="font-size: 0.85em; color: #666;">（戦略設計込み）</span></li>
+          <li>月1回オンラインコンサルミーティング<br><span style="font-size: 0.85em; color: #666;">（数値改善・成約導線の最適化）</span></li>
+          <li>数字・成果にこだわった運用</li>
+          <li>アカウント追加：＋5万円／1アカウント</li>
+          <li>契約期間：1年〜</li>
+        </ul>
+        <p class="modal-target-audience">👉 売上・契約に直結させたい方向け</p>
       `,
       price: "<span class='price-val'>200,000</span>円（税別）〜 / 月額"
     },
